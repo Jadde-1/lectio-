@@ -33,13 +33,33 @@ h2 {
     font-size: 2rem;
     color: #f5f5f5;
 }
+/* Knap container, placer knappen i venstre hjørne under header */
+.button-container {
+    
+    margin-top: 30px;  /* Placerer knappen lige under overskriften */
+    margin-bottom: 10px;  /* Placerer knappen lige under overskriften */
+    margin-left: 20px;  /* Placerer knappen til venstre */
+}
 
-a {
-    color: #ff5733;  /* Lys orange farve til links */
+/* Stil for knappen */
+.btn {
+    background-color: #ff5733;  /* Lys orange farve */
+    color: #ffffff;
+    padding: 15px 30px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-a:hover {
-    color: #ffcc00;
+.btn:hover {
+    background-color: gray;  /* Lys gul ved hover */
+    transform: scale(1.1);  /* Let forstørrelse ved hover */
 }
+
+.btn:active {
+    background-color: #e64a19;  /* Mørkere orange, når knappen trykkes */
+}
+
+
